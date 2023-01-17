@@ -1,0 +1,51 @@
+.section-cta {
+    position: relative;
+    padding-top: 83px;
+    padding-bottom: 84px;
+
+    @include bgImg ("./../img/bg/bg-img-1.jpg");
+
+    &::before {
+        @extend %overlay;
+      }
+      
+      @media (max-width: 1199px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+}
+
+
+.section-cta__content {
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+
+.section-cta__title {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1;
+    color: #FFFFFF;
+
+    @media (max-width: 899px) {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 599px) {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+}
+
+.section-cta__title span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-cta__button {
+    width: 230px;
+}
+

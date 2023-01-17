@@ -1,0 +1,25 @@
+.button-outline {
+    width: 180px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0);
+    }
+
+    &:focus {
+        outline: none;
+        background: #000;
+    }
+}

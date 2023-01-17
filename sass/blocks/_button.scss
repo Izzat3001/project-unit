@@ -1,0 +1,21 @@
+.button {
+    display: inline-block;
+    // width: 230px;
+    height: 60px;
+    background: #00C470;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 60px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        background: #01aa61;
+    }
+}
+

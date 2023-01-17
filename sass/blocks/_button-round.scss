@@ -1,0 +1,70 @@
+.button-round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #00C470;
+    
+    }
+}
+
+.nav-button {
+    position: relative;
+    width: 20px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 0;
+        width: 20px;
+        height: 4px;
+        background-color: #000;
+        border-radius: 4px;
+
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 20px;
+        height: 4px;
+        background-color: #000;
+        border-radius: 4px;
+
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+
+    &.nav-button.nav-active {
+        
+        background-color: transparent;
+
+        &::before {
+            transform: rotate(45deg);
+            top: 0;
+
+            transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+            top: 0;
+
+            transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        }
+    }
+}
+

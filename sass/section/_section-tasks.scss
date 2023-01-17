@@ -1,0 +1,118 @@
+.section-tasks {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E1E1E1;
+
+    @media (max-width: 1199px) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 899px) {
+        padding-bottom: 10px;
+    }
+
+    @media (max-width: 599px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.section-tasks__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 114px;
+    column-gap: 70px;
+
+    @media (max-width: 1199px) {
+        padding-right: 0;
+        padding-left: 75px;
+        column-gap: 34px;
+    }
+
+    @media (max-width: 899px) {
+        padding-left: 0;
+        column-gap: 30px;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    @media (max-width: 599px) {
+        flex-direction: column-reverse;
+        row-gap: 10px;
+    }
+}
+
+.section-tasks__contant {
+    width: 570px;
+
+    @media (max-width: 1199px) {
+        width: 495px;
+    }
+
+    @media (max-width: 899px) {
+        margin-top: 10px;
+        width: 270px;
+    }
+
+    @media (max-width: 599px) {
+        width: 290px;
+        text-align: center;
+    }
+}
+
+.section-tasks__title,
+.section-tasks__header {
+    margin-bottom: 30px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.section-tasks__title {
+    @media (max-width: 599px) {
+        margin-bottom: 10px;
+    }
+}
+
+.section-tasks__text {
+    width: 400px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.14;
+    color: #808080;
+
+    @media (max-width: 1199px) {
+        width: 420px;
+    }
+
+    @media (max-width: 899px) {
+        width: 270px;
+        line-height: 1,71;
+    }
+
+    @media (max-width: 599px) {
+        width: 290px;
+    }
+
+}
+
+.section-tasks__text p {
+    margin-bottom: 15px;
+}
+
+.section-tasks__img {
+    flex-shrink: 0;
+    width: 356px;
+    
+    @media (max-width: 1199px) {
+        width: 265px;
+    }
+
+    @media (max-width: 899px) {
+        width: 270px;
+    }
+}
